@@ -1,0 +1,14 @@
+# Compile of assignments.v was successful.
+# Compile of assignments_tb.v was successful.
+# 2 compiles, 0 failed with no errors.
+vsim work.assignments_tb
+# vsim work.assignments_tb 
+# Start time: 10:00:58 on Sep 13,2019
+# Loading work.assignments_tb
+# Loading work.assignments
+add wave -position end sim:/assignments_tb/*
+run -all
+# Break key hit
+# Break in Module assignments_tb at C:/Users/michael/Projects/opensource/FpgaCourse/Basics/Assignments/simulation/modelsim/assignments_tb.v line 24
+# End time: 10:18:35 on Sep 13,2019, Elapsed time: 0:17:37
+# Errors: 0, Warnings: 0
