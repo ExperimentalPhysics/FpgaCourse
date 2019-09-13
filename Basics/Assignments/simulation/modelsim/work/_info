@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/michael/Projects/opensource/FpgaCourse/Basics/Assignments/simulation/modelsim
+vassignments
+Z1 !s110 1568358051
+!i10b 1
+!s100 BRQ>fI9T]d1Zd]8S`mM?41
+IeCa3oOUkiH2`9O_mGieDO3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1568357628
+8C:/Users/michael/Projects/opensource/FpgaCourse/Basics/Assignments/assignments.v
+FC:/Users/michael/Projects/opensource/FpgaCourse/Basics/Assignments/assignments.v
+L0 2
+Z3 OV;L;10.6d;65
+r1
+!s85 0
+31
+Z4 !s108 1568358051.000000
+!s107 C:/Users/michael/Projects/opensource/FpgaCourse/Basics/Assignments/assignments.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/michael/Projects/opensource/FpgaCourse/Basics/Assignments/assignments.v|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+vassignments_tb
+R1
+!i10b 1
+!s100 Dji>h3S^iFIWF227R2N>J1
+ID_CKb5lTh7UbF8:=9OEzd2
+R2
+R0
+w1568357959
+8C:/Users/michael/Projects/opensource/FpgaCourse/Basics/Assignments/simulation/modelsim/assignments_tb.v
+FC:/Users/michael/Projects/opensource/FpgaCourse/Basics/Assignments/simulation/modelsim/assignments_tb.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/michael/Projects/opensource/FpgaCourse/Basics/Assignments/simulation/modelsim/assignments_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/michael/Projects/opensource/FpgaCourse/Basics/Assignments/simulation/modelsim/assignments_tb.v|
+!i113 1
+R5
+R6

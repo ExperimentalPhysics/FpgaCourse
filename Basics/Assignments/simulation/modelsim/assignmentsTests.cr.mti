@@ -1,0 +1,15 @@
+C:/Users/michael/Projects/opensource/FpgaCourse/Basics/Assignments/simulation/modelsim/assignments_tb.v {1 {vlog -work work -stats=none C:/Users/michael/Projects/opensource/FpgaCourse/Basics/Assignments/simulation/modelsim/assignments_tb.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module assignments_tb
+
+Top level modules:
+	assignments_tb
+
+} {} {}} C:/Users/michael/Projects/opensource/FpgaCourse/Basics/Assignments/assignments.v {1 {vlog -work work -stats=none C:/Users/michael/Projects/opensource/FpgaCourse/Basics/Assignments/assignments.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module assignments
+
+Top level modules:
+	assignments
+
+} {} {}}
