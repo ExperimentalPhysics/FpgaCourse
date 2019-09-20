@@ -1,8 +1,8 @@
 
 module Counter #
 (
-    DATA_WIDTH = 4,
-    OUTPUT_DATA_WIDTH = 8
+    parameter DATA_WIDTH = 4,
+    parameter OUTPUT_DATA_WIDTH = 8
 )
 (
     input wire clk,
