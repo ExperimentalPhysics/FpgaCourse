@@ -6,3 +6,9 @@ Basics/verilog/Counter/db/
 Basics/verilog/Counter/incremental_db/
 
 Basics/verilog/Counter/output_files/
+
+*.bak
+
+Basics/verilog/Counter/simulation/modelsim/rtl_work/
+
+Basics/verilog/Counter/simulation/modelsim/work/
