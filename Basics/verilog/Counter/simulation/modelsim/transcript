@@ -1,0 +1,11 @@
+vsim rtl_work.Counter_tb
+# vsim rtl_work.Counter_tb 
+# Start time: 10:28:18 on Sep 20,2019
+# Loading rtl_work.Counter_tb
+# Loading rtl_work.Counter
+add wave -position end sim:/Counter_tb/*
+run -all
+# Break key hit
+# Simulation stop requested.
+# End time: 10:43:39 on Sep 20,2019, Elapsed time: 0:15:21
+# Errors: 1, Warnings: 0

@@ -1,0 +1,52 @@
+# Reading C:/intelFPGA_pro/19.2/modelsim_ase/tcl/vsim/pref.tcl
+# do Counter_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.6d Lib Mapping Utility 2018.02 Feb 24 2018
+# vmap work rtl_work 
+# Copying C:/intelFPGA_pro/19.2/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/michael/Projects/opensource/FpgaCourse/Basics/verilog/Counter {C:/Users/michael/Projects/opensource/FpgaCourse/Basics/verilog/Counter/Counter.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.6d Compiler 2018.02 Feb 24 2018
+# Start time: 10:28:16 on Sep 20,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/michael/Projects/opensource/FpgaCourse/Basics/verilog/Counter" C:/Users/michael/Projects/opensource/FpgaCourse/Basics/verilog/Counter/Counter.v 
+# -- Compiling module Counter
+# 
+# Top level modules:
+# 	Counter
+# End time: 10:28:16 on Sep 20,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/michael/Projects/opensource/FpgaCourse/Basics/verilog/Counter {C:/Users/michael/Projects/opensource/FpgaCourse/Basics/verilog/Counter/Counter_tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.6d Compiler 2018.02 Feb 24 2018
+# Start time: 10:28:18 on Sep 20,2019
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/michael/Projects/opensource/FpgaCourse/Basics/verilog/Counter" C:/Users/michael/Projects/opensource/FpgaCourse/Basics/verilog/Counter/Counter_tb.v 
+# -- Compiling module Counter_tb
+# 
+# Top level modules:
+# 	Counter_tb
+# End time: 10:28:18 on Sep 20,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  counter_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" counter_tb 
+# Start time: 10:28:18 on Sep 20,2019
+# ** Error: (vsim-3170) Could not find 'counter_tb'.
+#         Searched libraries:
+#             C:/intelFPGA_pro/19.2/modelsim_ase/altera/verilog/altera
+#             C:/intelFPGA_pro/19.2/modelsim_ase/altera/verilog/220model
+#             C:/intelFPGA_pro/19.2/modelsim_ase/altera/verilog/sgate
+#             C:/intelFPGA_pro/19.2/modelsim_ase/altera/verilog/altera_mf
+#             C:/intelFPGA_pro/19.2/modelsim_ase/altera/verilog/altera_lnsim
+#             C:/Users/michael/Projects/opensource/FpgaCourse/Basics/verilog/Counter/simulation/modelsim/rtl_work
+#             C:/Users/michael/Projects/opensource/FpgaCourse/Basics/verilog/Counter/simulation/modelsim/rtl_work
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./Counter_run_msim_rtl_verilog.do PAUSED at line 12
+# error: CanCompile -> invalid command name ""
+# Loading project CounterTests
