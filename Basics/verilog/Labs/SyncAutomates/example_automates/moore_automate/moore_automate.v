@@ -8,7 +8,7 @@
 // Project Name:  moore_automate
 // Target Device:  
 // Tool versions:  
-// Description:   An example of Milley automate design
+// Description:   An example of Moore automate design
 //
 // Dependencies:
 // 
@@ -16,7 +16,7 @@
 // Revision 0.01 - File Created
 // Additional Comments:
 ////////////////////////////////////////////////////////////////////////////////
-module milley_automate(
+module moore_automate(
     input wire reset,
     input wire clk,
     input wire [1:0] a,
@@ -39,6 +39,8 @@ module milley_automate(
     localparam reg [1:0] C3 = 2'b10;
 
     reg[1:0] c;
+
+    assign b = get_output_state(c);
     
     always @(posedge clk)
     begin
@@ -79,5 +81,19 @@ module milley_automate(
             endcase
         end
     end
+    
+function [1:0] get_output_state;
+    input [1:0] state;
+    case (state)
+        C1:
+            get_output_state = B3;
+        C2:
+            get_output_state = B2;
+        C3:
+            get_output_state = B1;
+        default:
+            get_output_state = B1;
+    endcase
+endfunction
 
 endmodule

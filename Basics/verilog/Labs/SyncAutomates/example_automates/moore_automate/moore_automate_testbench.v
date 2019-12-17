@@ -1,4 +1,3 @@
-`timescale 1ns / 1ps
 ////////////////////////////////////////////////////////////////////////////////
 // Company: 
 // Engineer:      Ushakov M.V. (EvilLord666)
@@ -6,10 +5,10 @@
 // Create Date:   
 // Design Name:   
 // Module Name:   
-// Project Name:  milley_automate_testbench
+// Project Name:  moore_automate_testbench
 // Target Device:  
 // Tool versions:  
-// Description:   testbench on example of Milley automate design
+// Description:   Testbench on Moore automate
 //
 // Dependencies:
 // 
@@ -17,25 +16,23 @@
 // Revision 0.01 - File Created
 // Additional Comments:
 ////////////////////////////////////////////////////////////////////////////////
-
-module milley_automate_testbench();
-
-reg [1:0] a;
-wire [1:0] b;
-reg clk;
-reg reset;
-
-reg [31:0] counter;
-
-milley_automate uut(.clk(clk), .reset(reset), .a(a), .b(b));
-
-initial
+module moore_automate_testbench();
+    
+    reg clk;
+    reg reset;
+    reg [1:0] a;
+    wire [1:0] b;
+    reg [31:0] counter;
+    
+    moore_automate uut(.clk(clk), .reset(reset), .a(a), .b(b));
+    
+    initial
 begin
     clk <= 0;
     reset <= 1;
     a <= 0;
     counter <= 0;
-    # 400
+    # 300
     reset <= 0;
 end
 
@@ -45,32 +42,19 @@ begin
     #100 counter <= counter + 1;
     if (counter == 5)
     begin
-        a <= 2'b11;  // A3, c -> C3, b -> b4
+        a <= 2'b00;  // A1, c -> C2
     end
     if (counter == 7)
     begin
-        a <= 2'b01;  // A1, c->C4
+        a <= 2'b10;   // A3, c -> C1
     end
-    // B state should not changed until a1
     if (counter == 8)
     begin
-        a <= 2'b00;
+        a <= 2'b01;   // A2, c -> C3
     end
     if (counter == 11)
     begin
-        a <= 2'b01;
-    end
-    if (counter == 13)
-    begin
-        a <= 2'b11;
-    end
-    if (counter == 14)
-    begin
-        a <= 2'b11;
-    end
-    if (counter == 16)
-    begin
-        a <= 0;
+        a <= 2'b10;   // A3 -> c2
         counter <= 0;
     end
 end
