@@ -1,0 +1,8 @@
+C:/Users/michael/Projects/opensource/FpgaCourse/Basics/verilog/Labs/SyncAutomates/example_automates/moore_automate/moore_automate_testbench.v {1 {vlog -work work -stats=none C:/Users/michael/Projects/opensource/FpgaCourse/Basics/verilog/Labs/SyncAutomates/example_automates/moore_automate/moore_automate_testbench.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module moore_automate_testbench
+
+Top level modules:
+	moore_automate_testbench
+
+} {} {}}

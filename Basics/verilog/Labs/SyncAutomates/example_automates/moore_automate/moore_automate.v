@@ -26,9 +26,9 @@ module moore_automate(
     // a1 - 1, a2 - 2, a3 - 3
     // b1 - 0, b2 - 1, b3 - 2, b4 -3
     
-    localparam reg [1:0] A1 = 2'b01;
-    localparam reg [1:0] A2 = 2'b10;
-    localparam reg [1:0] A3 = 2'b11;
+    localparam reg [1:0] A1 = 2'b00;
+    localparam reg [1:0] A2 = 2'b01;
+    localparam reg [1:0] A3 = 2'b10;
     
     localparam reg [1:0] B1 = 2'b00;
     localparam reg [1:0] B2 = 2'b01;

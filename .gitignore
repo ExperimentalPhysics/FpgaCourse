@@ -24,3 +24,7 @@ Basics/verilog/Labs/SyncAutomates/example_automates/milley_automate/simulation/m
 Basics/verilog/Labs/SyncAutomates/example_automates/milley_automate/simulation/modelsim/work/
 
 *.rpt
+
+Basics/verilog/Labs/SyncAutomates/example_automates/moore_automate/db/
+
+Basics/verilog/Labs/SyncAutomates/example_automates/moore_automate/output_files/
