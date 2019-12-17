@@ -5,7 +5,7 @@
 // Create Date:   
 // Design Name:   
 // Module Name:   
-// Project Name:  millet_automate
+// Project Name:  milley_automate
 // Target Device:  
 // Tool versions:  
 // Description:   An example of Milley automate design
