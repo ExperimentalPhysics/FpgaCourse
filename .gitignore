@@ -18,3 +18,9 @@ Basics/verilog/Labs/SyncAutomates/example_automates/milley_automate/db/
 Basics/verilog/Labs/SyncAutomates/example_automates/milley_automate/incremental_db/
 
 Basics/verilog/Labs/SyncAutomates/example_automates/milley_automate/output_files/
+
+Basics/verilog/Labs/SyncAutomates/example_automates/milley_automate/simulation/modelsim/rtl_work/
+
+Basics/verilog/Labs/SyncAutomates/example_automates/milley_automate/simulation/modelsim/work/
+
+*.rpt

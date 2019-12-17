@@ -47,84 +47,88 @@ module milley_automate(
         if (reset)
         begin
             c <= C1;
+            b <= 0;
         end
-        case (c)
-            C1: 
-            begin
-                if (a == A2)
+        else
+        begin
+            case (c)
+                C1: 
                 begin
-                    c <= C2;
-                    b <= B3;
+                    if (a == A2)
+                    begin
+                        c <= C2;
+                        b <= B3;
+                    end
+                    else if (a == A3)
+                    begin
+                        c <= C3;
+                        b <= B4;
+                    end
+                    else // доопределение состояния автомата
+                    begin
+                        c <= C1;
+                        b <= B2;
+                    end
                 end
-                else if (a == A3)
+                C2: 
                 begin
-                    c <= C3;
-                    b <= B4;
+                    if (a == A3)
+                    begin
+                        c <= C1;
+                        b <= B1;
+                    end
+                    else // доопределение состояния автомата
+                    begin
+                        c <= C2;
+                        // мы не изменяем значение b
+                    end
                 end
-                else // доопределение состояния автомата
+                C3: 
                 begin
-                    c <= C1;
-                    b <= B2;
+                    if (a == A1)
+                    begin
+                        c <= C4;
+                        b <= B1;
+                    end
+                    else if (a == A2)
+                    begin
+                        c <= C1;
+                        b <= B3;
+                    end
+                    else if (a == A3)
+                    begin
+                        c <= C2;
+                        b <= B4;
+                    end
+                    else
+                    begin
+                        c <= C3;
+                    end
                 end
-            end
-            C2: 
-            begin
-                if (a == A3)
+                C4: 
                 begin
-                    c <= C1;
+                    if (a == A1)
+                    begin
+                        c <= C4;
+                        b <= B2;
+                    end
+                    else if (a == A3)
+                    begin
+                        c <= C2;
+                        b <= B2;
+                    end
+                    else 
+                    begin  // доопределение автомата, мы не изменяем значение b
+                        c <= C4;
+                    end
+                end
+                default:
+                begin
                     b <= B1;
-                end
-                else // доопределение состояния автомата
-                begin
-                    c <= C2;
-                    // мы не изменяем значение b
-                end
-            end
-            C3: 
-            begin
-                if (a == A1)
-                begin
-                    c <= C4;
-                    b <= B1;
-                end
-                else if (a == A2)
-                begin
                     c <= C1;
-                    b <= B3;
                 end
-                else if (a == A3)
-                begin
-                    c <= C2;
-                    b <= B4;
-                end
-                else
-                begin
-                    c <= C3;
-                end
-            end
-            C4: 
-            begin
-                if (a == A1)
-                begin
-                    c <= C4;
-                    b <= B2;
-                end
-                else if (a == A3)
-                begin
-                    c <= C2;
-                    b <= B2;
-                end
-                else 
-                begin  // доопределение автомата, мы не изменяем значение b
-                    c <= C4;
-                end
-            end
-            default:
-            begin
-                b <= B1;
-                c <= C1;
-            end
-        endcase
+            endcase
+        end
     end
 
 endmodule

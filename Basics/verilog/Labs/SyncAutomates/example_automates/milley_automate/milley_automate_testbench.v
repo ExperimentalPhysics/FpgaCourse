@@ -33,6 +33,7 @@ initial
 begin
     clk <= 0;
     reset <= 1;
+    a <= 0;
     counter <= 0;
     # 400
     reset <= 0;
@@ -55,17 +56,22 @@ begin
     begin
         a <= 2'b00;
     end
-    if (counter == 9)
+    if (counter == 11)
     begin
         a <= 2'b01;
     end
-    if (counter == 11)
+    if (counter == 13)
     begin
         a <= 2'b11;
     end
-    if (counter == 12)
+    if (counter == 14)
     begin
         a <= 2'b11;
+    end
+    if (counter == 16)
+    begin
+        a <= 0;
+        counter <= 0;
     end
 end
 
